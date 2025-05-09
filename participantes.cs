@@ -7,4 +7,11 @@ public class Participantes
     public int telefono;
     public int DNI;
     public int restriccionAlimentaria;
+    public Participantes(string nombreCompleto,string correo,int telefono,int DNI,int restriccionAlimentaria){
+this.nombreCompleto=nombreCompleto;
+this.correo=correo; 
+this.telefono=telefono;
+this.DNI=DNI;
+this.restriccionAlimentaria=restriccionAlimentaria;
+    }
 }

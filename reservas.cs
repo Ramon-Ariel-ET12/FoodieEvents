@@ -2,13 +2,13 @@ namespace FoodieEvents;
 
 public class Reserva
 {
-    public string participante="";
+    public Participantes participante;
     public string inscripcion="";
     public DateTime fecha ;
     public int metodoPago;
     public int estadoReserva;
 
-    public Reserva (string participante,string inscripcion, DateTime fecha,int metodoPago, int estadoReserva){
+    public Reserva (Participantes participante,string inscripcion, DateTime fecha,int metodoPago, int estadoReserva){
 this.participante = participante;
 this.inscripcion=inscripcion;
 this.fecha = fecha;
