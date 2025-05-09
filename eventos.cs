@@ -10,4 +10,14 @@ public class Eventos
     public int capacidadMaxima;
     public int precioEntrada;
     public string ubicacion="";
+    public Eventos(string nombre, string descripcion,int tipoEvento,DateTime inicio,DateTime fin,int capacidadMaxima,int precioEntrada,string ubicacion){
+this.nombre = nombre;
+this.descripcion = descripcion;
+this.tipoEvento = tipoEvento;
+this.inicio = inicio;
+this.fin = fin;
+this.capacidadMaxima = capacidadMaxima;
+this.precioEntrada = precioEntrada;
+this.ubicacion = ubicacion;
+}
 }
