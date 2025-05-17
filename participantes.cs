@@ -12,6 +12,8 @@ this.nombreCompleto=nombreCompleto;
 this.correo=correo; 
 this.telefono=telefono;
 this.DNI=DNI;
+
+Validaciones.ValidarParticipantes(restriccionAlimentaria);
 this.restriccionAlimentaria=restriccionAlimentaria;
-    }
+}
 }

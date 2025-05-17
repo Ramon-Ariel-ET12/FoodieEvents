@@ -9,10 +9,14 @@ public class Reserva
     public int estadoReserva;
 
     public Reserva (Participantes participante,string inscripcion, DateTime fecha,int metodoPago, int estadoReserva){
+
+Validaciones.ValidarReserva(estadoReserva);
+this.estadoReserva=estadoReserva;
+this.metodoPago=metodoPago;
 this.participante = participante;
 this.inscripcion=inscripcion;
 this.fecha = fecha;
-this.metodoPago=metodoPago;
+
 this.estadoReserva=estadoReserva;
     }
 }

@@ -15,6 +15,4 @@ this.nacionalidad=nacionalidad;
 this.Correo=Correo;
 this.Telefono=Telefono;
 }
-
 }
-

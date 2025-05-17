@@ -7,24 +7,24 @@ string  nombre =Console.ReadLine();
 Console.WriteLine("Ingrese una descripcion del evento");
 string descripcion =Console.ReadLine();
 
-Console.WriteLine("Ingrese el tipo de evento");
+Console.WriteLine("Ingrese el tipo de evento(1-cata,2-feria,3-clase,4-cena temática)");
 int tipoEvento=int.Parse(Console.ReadLine());
 
-Console.WriteLine("Ingrese una fecha (yyyy-MM-dd):");
+Console.WriteLine("Ingrese la fecha de inicio el evento(yyyy-MM-dd):");
 DateTime inicio = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd", null);
 Console.WriteLine(inicio);
 
-Console.WriteLine("Ingrese una fecha (yyyy-MM-dd):");
+Console.WriteLine("Ingrese la fecha del fin del evento(yyyy-MM-dd):");
 DateTime fin = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd", null);
 Console.WriteLine(fin);
 
 Console.WriteLine("Ingrese la ubicacion donde estara el evento");
-string ubicacion =Console.ReadLine();
+string? ubicacion =Console.ReadLine();
 
 Eventos eventos = new Eventos(nombre,descripcion,tipoEvento,inicio,fin,ubicacion);
 Console.WriteLine("Nombre:" + eventos.nombre);
 Console.WriteLine("Descripcion:"+ eventos.descripcion);
-Console.WriteLine("El tipo del evento:"+eventos.tipoEvento);
+Console.WriteLine("El tipo del evento es:"+eventos.tipoEvento);
 Console.WriteLine("inicio del evento:"+eventos.inicio);
 Console.WriteLine("Fin del evento:"+eventos.fin);
 Console.WriteLine("Capacidad Maxima de entradas"+eventos.capacidadMaxima);
@@ -32,13 +32,13 @@ Console.WriteLine("Precio de la entrada"+eventos.precioEntrada);
 Console.WriteLine("La ubicacion es: "+eventos.ubicacion);
 
 //Participantes
-Console.WriteLine("Ingrese su nombre completo");
-string nombreCompleto=Console.ReadLine();
+Console.WriteLine("Ingrese su nombre completo de participante");
+string  nombreCompleto=Console.ReadLine();
 
-Console.WriteLine("Ingrese su correo");
+Console.WriteLine("Ingrese su correo del participante");
 string correo=Console.ReadLine();
 
-Console.WriteLine("Ingrese su numero de telefono");
+Console.WriteLine("Ingrese su numero de telefono de participante");
 int telefono=int.Parse(Console.ReadLine());
 
 Console.WriteLine("Ingrese su DNI");
@@ -55,7 +55,7 @@ Console.WriteLine("Su DNI es:"+ participantes.DNI);
 Console.WriteLine("Tiene restriccion Alimentaria?:"+ participantes.restriccionAlimentaria);
 
 //Chef Organizadores
-Console.WriteLine("Ingrese su nombre completo");
+Console.WriteLine("Ingrese nombre completo  del chef/Organizador");
 string NombreCompleto=Console.ReadLine();
 
 Console.WriteLine("Ingrese su especialidad");
@@ -67,10 +67,10 @@ int nacionalidad=int.Parse(Console.ReadLine());
 Console.WriteLine("Cuantos años de experiencia tienes?");
 int cantidadExperiencia=int.Parse(Console.ReadLine());
 
-Console.WriteLine("Ingresa tu correo");
+Console.WriteLine("Ingresa correo del chef/Organizador");
 string Correo =Console.ReadLine();
 
-Console.WriteLine("Ingrese su numero de telefono");
+Console.WriteLine("Ingrese su numero de telefono(Chef/Organizador)");
 int Telefono=int.Parse(Console.ReadLine());
 
 ChefOrganizadores chefOrganizadores=new ChefOrganizadores(NombreCompleto,especialidad,nacionalidad,cantidadExperiencia,Correo,Telefono);
@@ -92,5 +92,10 @@ Console.WriteLine("Ingrese su metodo de pago");
 int metodoPago=int.Parse(Console.ReadLine());
 
 Console.WriteLine("Indique el estado de la reserva");
-int estadoReserva=int.Parse(Console.ReadLine());
+short estadoReserva=short.Parse(Console.ReadLine());
 
+Reserva reserva=new Reserva(participantes,inscripcion, fecha, metodoPago, estadoReserva);
+Console.WriteLine(" su inscripcion:" + reserva.inscripcion);
+Console.WriteLine(" la fecha del evento :" + reserva.fecha);
+Console.WriteLine(" el metodo de pago:" + reserva.metodoPago);
+Console.WriteLine("el estado de la reserva:" + reserva.estadoReserva);
