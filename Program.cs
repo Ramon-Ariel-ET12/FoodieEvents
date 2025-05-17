@@ -27,7 +27,7 @@ Console.WriteLine("Ingrese la ubicacion donde estara el evento");
 string ubicacion =Console.ReadLine();
 
 Eventos eventos = new Eventos(nombre,descripcion,tipoEvento,inicio,fin,ubicacion);
-Console.WriteLine("Nombre:" + eventos.nombre);
+Console.WriteLine("Nombre:" + eventos.getNombre());
 Console.WriteLine("Descripcion:"+ eventos.descripcion);
 Console.WriteLine("El tipo del evento es:"+eventos.tipoEvento);
 Console.WriteLine("inicio del evento:"+eventos.inicio);

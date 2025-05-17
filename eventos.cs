@@ -2,7 +2,7 @@ namespace FoodieEvents;
 
 public class Eventos
 {
-    public string nombre="";
+    private string nombre="";
     public string descripcion="";
     public int tipoEvento;
     public DateTime inicio;
@@ -38,5 +38,8 @@ this.ubicacion = ubicacion;
         Console.WriteLine("Cena tematica");
     }
 
-
+    public string getNombre()
+    {
+        return this.nombre;
+    }
 }
