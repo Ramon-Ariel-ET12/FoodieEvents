@@ -8,7 +8,8 @@ Console.WriteLine("Ingrese una descripcion del evento");
 string descripcion =Console.ReadLine();
 
 Console.WriteLine("Ingrese el tipo de evento(1-cata,2-feria,3-clase,4-cena temática)");
-int tipoEvento=int.Parse(Console.ReadLine());
+int tipoEvento = int.Parse(Console.ReadLine());
+Validaciones.ValidarOpcion(tipoEvento, 1, 4);
 
 Console.WriteLine("Ingrese la fecha de inicio el evento(yyyy-MM-dd):");
 DateTime inicio = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd", null);
@@ -23,7 +24,7 @@ DateTime fin;
 
 
 Console.WriteLine("Ingrese la ubicacion donde estara el evento");
-string? ubicacion =Console.ReadLine();
+string ubicacion =Console.ReadLine();
 
 Eventos eventos = new Eventos(nombre,descripcion,tipoEvento,inicio,fin,ubicacion);
 Console.WriteLine("Nombre:" + eventos.nombre);

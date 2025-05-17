@@ -24,7 +24,7 @@ namespace FoodieEvents
                 throw new ArgumentException("Esta mal en algo");
             }
         }
-        
+
 
         public static void ValidadorFecha(DateTime inicio, DateTime fin)
         {
@@ -33,5 +33,15 @@ namespace FoodieEvents
                 throw new ArgumentException("La fecha de fin no puede ser menor a la fecha de inicio");
             }
         }
-}
+
+        public static void ValidarOpcion(int opcion, int minimo, int maximo)
+        {
+            if (opcion < minimo || opcion > maximo)
+            {
+                throw new ArgumentException($"La opción debe estar entre {minimo} y {maximo}");
+            }
+
+        }
+
+    }
 }
