@@ -1,28 +1,37 @@
 using System;
 namespace FoodieEvents
 {
-public static class Validaciones
-{
+    public static class Validaciones
+    {
         public static void ValidarEvento(int tipoEvento)
         {
-            if(tipoEvento > 4)
+            if (tipoEvento > 4)
             {
-            throw new ArgumentException("evento no encontrado");
+                throw new ArgumentException("evento no encontrado");
             }
         }
         public static void ValidarParticipantes(int restriccionAlimentaria)
         {
-            if(restriccionAlimentaria > 4)
+            if (restriccionAlimentaria > 4)
             {
                 throw new ArgumentException("No valido");
             }
         }
         public static void ValidarReserva(int estadoReserva)
         {
-        if(estadoReserva>3)
-        {
-        throw new ArgumentException("Esta mal en algo");
+            if (estadoReserva > 3)
+            {
+                throw new ArgumentException("Esta mal en algo");
+            }
         }
+        
+
+        public static void ValidadorFecha(DateTime inicio, DateTime fin)
+        {
+            if (fin < inicio)
+            {
+                throw new ArgumentException("La fecha de fin no puede ser menor a la fecha de inicio");
+            }
         }
 }
 }

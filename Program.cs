@@ -14,9 +14,13 @@ Console.WriteLine("Ingrese la fecha de inicio el evento(yyyy-MM-dd):");
 DateTime inicio = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd", null);
 Console.WriteLine(inicio);
 
-Console.WriteLine("Ingrese la fecha del fin del evento(yyyy-MM-dd):");
-DateTime fin = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd", null);
-Console.WriteLine(fin);
+DateTime fin;
+
+    Console.WriteLine("Ingrese la fecha del fin del evento(yyyy-MM-dd):");
+    fin = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd", null);
+    Validaciones.ValidadorFecha(inicio, fin);
+    Console.WriteLine(fin);
+
 
 Console.WriteLine("Ingrese la ubicacion donde estara el evento");
 string? ubicacion =Console.ReadLine();
