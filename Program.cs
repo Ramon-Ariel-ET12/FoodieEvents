@@ -14,6 +14,7 @@ Validaciones.ValidarOpcion(tipoEvento, 1, 4);
 Console.WriteLine("Ingrese la fecha de inicio el evento(yyyy-MM-dd):");
 DateTime inicio = DateTime.ParseExact(Console.ReadLine(), "yyyy-MM-dd", null);
 Console.WriteLine(inicio);
+//cometario
 
 DateTime fin;
 
