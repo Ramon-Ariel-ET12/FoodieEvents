@@ -1,0 +1,14 @@
+/home/et12alumno/Escritorio/FoodieEvents/bin/Debug/net8.0/FoodieEvents
+/home/et12alumno/Escritorio/FoodieEvents/bin/Debug/net8.0/FoodieEvents.deps.json
+/home/et12alumno/Escritorio/FoodieEvents/bin/Debug/net8.0/FoodieEvents.runtimeconfig.json
+/home/et12alumno/Escritorio/FoodieEvents/bin/Debug/net8.0/FoodieEvents.dll
+/home/et12alumno/Escritorio/FoodieEvents/bin/Debug/net8.0/FoodieEvents.pdb
+/home/et12alumno/Escritorio/FoodieEvents/obj/Debug/net8.0/FoodieEvents.GeneratedMSBuildEditorConfig.editorconfig
+/home/et12alumno/Escritorio/FoodieEvents/obj/Debug/net8.0/FoodieEvents.AssemblyInfoInputs.cache
+/home/et12alumno/Escritorio/FoodieEvents/obj/Debug/net8.0/FoodieEvents.AssemblyInfo.cs
+/home/et12alumno/Escritorio/FoodieEvents/obj/Debug/net8.0/FoodieEvents.csproj.CoreCompileInputs.cache
+/home/et12alumno/Escritorio/FoodieEvents/obj/Debug/net8.0/FoodieEvents.dll
+/home/et12alumno/Escritorio/FoodieEvents/obj/Debug/net8.0/refint/FoodieEvents.dll
+/home/et12alumno/Escritorio/FoodieEvents/obj/Debug/net8.0/FoodieEvents.pdb
+/home/et12alumno/Escritorio/FoodieEvents/obj/Debug/net8.0/FoodieEvents.genruntimeconfig.cache
+/home/et12alumno/Escritorio/FoodieEvents/obj/Debug/net8.0/ref/FoodieEvents.dll
